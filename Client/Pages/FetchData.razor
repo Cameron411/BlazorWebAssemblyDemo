@@ -6,6 +6,8 @@
 
 <p>This component demonstrates fetching data from the server.</p>
 
+<Button Color="Color.Primary" Icon="fa-solid fa-font-awesome" Text="test button" />
+
 @if (forecasts == null)
 {
     <p><em>Loading...</em></p>
@@ -46,7 +48,7 @@ else
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex.ToString());
+            System.Console.WriteLine(ex.ToString());
         }
     }
 }
